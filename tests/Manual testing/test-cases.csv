@@ -1,0 +1,41 @@
+Test Case ID,Feature,Test Scenario,Test Steps,Test Data,Expected Result,Actual Result,Status
+TC_Login_01,Login,Verify login with valid credentials,"1. Open the web application
+2. Navigate to Login page
+3. Enter valid username and password
+4. Click 'Login'","Username: user1
+Password: Pass@123","User should be logged in and redirected to dashboard",,Pass/Fail
+TC_Login_02,Login,Verify login with invalid password,"1. Open Login page
+2. Enter valid username and wrong password
+3. Click 'Login'","Username: user1
+Password: WrongPass","Error message 'Invalid username or password' should appear",,Pass/Fail
+TC_Login_03,Login,Verify login with empty fields,"1. Open Login page
+2. Leave username and password empty
+3. Click 'Login'","Username: <empty>
+Password: <empty>","Error message 'Please enter username and password' should appear",,Pass/Fail
+TC_Login_04,Login,Verify 'Forgot Password' link,"1. Open Login page
+2. Click on 'Forgot Password'",N/A,"User should be redirected to password recovery page",,Pass/Fail
+TC_Login_05,Login,Verify UI elements,"1. Open Login page",N/A,"Username field, Password field, Login button, Forgot Password link should be visible and aligned properly",,Pass/Fail
+TC_Reg_01,Registration,Verify registration with valid details,"1. Navigate to Registration page
+2. Fill in valid name, email, password
+3. Click 'Register'","Name: John Doe
+Email: john@example.com
+Password: Pass@123","Account should be created successfully and user redirected to login",,Pass/Fail
+TC_Reg_02,Registration,Verify registration with existing email,"1. Open Registration page
+2. Enter email already registered
+3. Click 'Register'","Email: existing@example.com","Error message 'Email already exists' should appear",,Pass/Fail
+TC_Reg_03,Registration,Verify registration with invalid email,"1. Enter invalid email format
+2. Click 'Register'","Email: johnexample.com","Error message 'Please enter valid email' should appear",,Pass/Fail
+TC_Reg_04,Registration,Verify registration with empty fields,"1. Leave all fields empty
+2. Click 'Register'",N/A,"Error message 'All fields are required' should appear",,Pass/Fail
+TC_Reg_05,Registration,Verify password strength,"1. Enter weak password
+2. Click 'Register'","Password: 12345","Warning message 'Password too weak' should appear",,Pass/Fail
+TC_Search_01,Search,Verify search with valid keyword,"1. Navigate to Search page
+2. Enter valid keyword
+3. Click 'Search'","Keyword: Laptop","Relevant search results should be displayed",,Pass/Fail
+TC_Search_02,Search,Verify search with no results,"1. Enter keyword that has no matches
+2. Click 'Search'","Keyword: XYZ123","Message 'No results found' should appear",,Pass/Fail
+TC_Search_03,Search,Verify search with special characters,"1. Enter special characters
+2. Click 'Search'","Keyword: @#$%","Either error message or no results should appear",,Pass/Fail
+TC_Search_04,Search,Verify search input is empty,"1. Leave search field empty
+2. Click 'Search'","Keyword: <empty>","Error message 'Please enter a keyword' should appear",,Pass/Fail
+TC_Search_05,Search,Verify UI elements of search page,"1. Open Search page",N/A,"Search field, Search button, Filters should be visible and properly aligned",,Pass/Fail

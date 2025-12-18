@@ -1,0 +1,17 @@
+Bug ID,Feature,Test Case ID,Bug Title,Description,Steps to Reproduce,Test Data,Expected Result,Actual Result,Severity,Priority,Status,Assigned To,Date Reported
+BR_001,Login,TC_Login_02,Login fails with incorrect password,"When user enters an invalid password, the system does not display the correct error message","1. Open Login page
+2. Enter valid username
+3. Enter invalid password
+4. Click 'Login'","Username: user1; Password: WrongPass","Error message 'Invalid username or password' should appear","No error message appears",Medium,High,Open,Oualid,25-10-2025
+BR_002,Registration,TC_Reg_02,Existing email allows registration,"The system allows registration even when the email is already registered","1. Open Registration page
+2. Enter existing email
+3. Click 'Register'","Email: existing@example.com","Error message 'Email already exists' should appear","Registration successful, no error shown",High,High,Open,Oualid,25-10-2025
+BR_003,Search,TC_Search_02,No results message not displayed,"When search keyword has no results, system does not show the 'No results found' message","1. Navigate to Search page
+2. Enter keyword with no matches
+3. Click 'Search'","Keyword: XYZ123","Message 'No results found' should appear","Page shows empty, no message",Medium,Medium,Open,Oualid,25-10-2025
+BR_004,Login,TC_Login_03,Empty login fields not validated,"System allows login button click without input and gives unclear response","1. Open Login page
+2. Leave username and password empty
+3. Click 'Login'","Username: <empty>; Password: <empty>","Error message 'Please enter username and password' should appear","Blank page reloads, no message",High,High,Open,Oualid,25-10-2025
+BR_005,Search,TC_Search_03,Special characters in search cause error,"System crashes or shows incorrect behavior when special characters entered","1. Open Search page
+2. Enter @#$% in search
+3. Click 'Search'","Keyword: @#$%","Error message or no results","Application freezes",Critical,High,Open,Oualid,25-10-2025

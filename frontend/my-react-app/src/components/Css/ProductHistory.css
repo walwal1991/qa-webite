@@ -1,0 +1,95 @@
+.product-history {
+  padding: 20px;
+  color: white;
+}
+
+.product-history h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.filters .row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.filters input[type="text"],
+.filters input[type="date"] {
+  background: #222;
+  border: 1px solid #555;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.btn {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #777;
+}
+
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1c1c1c;
+  color: white;
+  margin-top: 10px;
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+
+.history-table tbody td {
+  text-align: center;
+  color: #ccc;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.pagination button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.pagination select {
+  background: #222;
+  color: white;
+  border: 1px solid #555;
+  padding: 4px;
+}
+
+.version {
+  float: right;
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 5px;
+}
