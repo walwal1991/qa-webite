@@ -14,8 +14,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const API_URL = process.env.REACT_APP_API_URL;
-      const res = await axios.post(`${API_URL}/api/login`, {
+      const res = await axios.post(`https://qa-webite-1.onrender.com/api/login`, {
         email,
         password,
       });
