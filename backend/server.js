@@ -9,8 +9,8 @@ const searchRoutes = require('./routes/search');
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'https://qa-webite.vercel.app/', // React frontend
-  credentials: true
+  origin: 'https://qa-webite.vercel.app', // React frontend
+  //credentials: true
 }));
 
 app.use('/api', authRoutes);
