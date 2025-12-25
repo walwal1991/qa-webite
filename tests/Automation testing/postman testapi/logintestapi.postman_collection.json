@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "c43e4ef4-42ea-4093-84a2-ff3df96f22a7",
+		"name": "logintestapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29778262"
+	},
+	"item": [
+		{
+			"name": "https://qa-webite.onrender.com/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"anifeg@test.com\",\r\n  \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://qa-webite.onrender.com/api/login"
+			},
+			"response": []
+		}
+	]
+}
