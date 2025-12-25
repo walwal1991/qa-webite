@@ -18,3 +18,9 @@ https://qa-webite.vercel.app
 - CORS handling between frontend and backend
 This is how you connect the project to QA / automation roles.
 
+## 🧠 Lessons Learned
+- Handling CORS issues between Vercel and Render
+- Managing environment variables securely
+- Debugging deployment-only bugs
+
+
