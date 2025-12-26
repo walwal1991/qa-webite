@@ -51,6 +51,29 @@ Search Functionality
 Form Submissions
 Sample Test Screenshot
 
+cypress test result :
+1
+visitqa-webite.vercel.app -> 308: https://qa-webite.vercel.app/
+2
+getinput[type="email"]
+3
+typeanifeg@test.com
+4
+getinput[type="password"]
+5
+type123456
+6
+getbutton[type="submit"]
+7
+click
+8
+containsli, MYVIEW
+9
+assertexpected <li> to exist in the DOM
+(xhr)POST 200 https://qa-webite.onrender.com/api/login
+(new url)https://qa-webite.vercel.app/dashboard
+result test passes
+
 Postman Testing (Backend API)
 Run Postman Collection
 Open Postman.
@@ -66,6 +89,7 @@ Including screenshots or GIFs of your Cypress test runs.
 Including Postman test results (like status codes, response snapshots, or exported collection runs).
 Adding a brief explanation of the testing workflow.
 Optionally, linking to a short video demo of the tests running.
+
 
 
 
